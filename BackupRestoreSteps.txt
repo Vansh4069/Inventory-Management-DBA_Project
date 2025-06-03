@@ -1,0 +1,10 @@
+-- backup the database 
+BACKUP DATABASE InventoryDB
+TO DISK = 'E:\sql project backup\InventoryDB.bak'
+WITH FORMAT, INIT;
+
+-- restore the database
+-- In case you need to restore:
+RESTORE DATABASE InventoryDB
+FROM DISK = 'E:\sql project backup\InventoryDB.bak'
+WITH REPLACE;
